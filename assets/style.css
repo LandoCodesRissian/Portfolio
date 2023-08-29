@@ -1,7 +1,8 @@
 header {
-    background-color: burlywood;
+    background-color: #00021d;
     display:flex;
     justify-content: space-between;
+    color:#e84fcb;
 }
 
 h1 {
@@ -22,4 +23,19 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+.hero {
+    background-image: url("../images/keyboard-background.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    height: 400px;
+    padding-left: 100%;
 }
