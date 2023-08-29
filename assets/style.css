@@ -1,8 +1,13 @@
+:root {
+    --background: #00021d;
+    --fontColor:#e84fcb;
+}
+
 header {
-    background-color: #00021d;
+    background-color: var(--background);
     display:flex;
     justify-content: space-between;
-    color:#e84fcb;
+    color:var(--fontColor);
 }
 
 h1 {
@@ -32,10 +37,37 @@ header nav ul li {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: right;
 }
 
 .hero img {
-    height: 400px;
-    padding-left: 100%;
+    height: 500px;
+}
+
+.title {
+    min-height: 100%;
+    text-align: left;
+    padding-right: 2%;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+h2 {
+    font-size:42px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    padding-top: 3%;
+    background-color: var(--background);
+    color: var(--fontColor);
+}
+
+.about-me p {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 90%;
 }
