@@ -3,6 +3,7 @@
     --fontColor:#e84fcb;
 }
 /* Header styling */
+
 header {
     background-color: var(--background);
     display:flex;
@@ -30,6 +31,7 @@ header nav ul li {
     margin-left: 25px;
 }
 /* picture area styling */
+
 .hero {
     background-image: url("../images/keyboard-background.jpg");
     height: 600px;
@@ -45,6 +47,7 @@ header nav ul li {
     padding-right: 20px;
 }
 /* about me styling  */
+
 .title {
     display: flex;
     min-height: 100%;
@@ -77,6 +80,8 @@ h2 {
     width: 90%;
 }
 
+/* example styling */
+
 .examples {
     padding: 30px 0;
     display: flex;
@@ -92,6 +97,7 @@ h2 {
     display: flex;
     font-style:normal;
     justify-content:center;
+    flex-direction: column;
 }
 
 .grid {
@@ -101,17 +107,31 @@ h2 {
     gap: 5%;
 }
 
-.sample {
-    background-image: url("../images/confused-older-man.jpg" );
-    background-size: cover;
-    border: solid;
-    color: black;
-    align-items: flex-end;
+.projectA {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url(../images/projectA.jpg);
+}
+.projectB {
+    background-image: url(../images/projectB.jpg);
+    background-size: 110%;
+}
+.projectC {
+    background-image: url(../images/projectC.jpg);
+    background-size: 100%;
+}
+.projectD {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url(../images/projectD.jpg);
 }
 
 .label {
     display:flexbox;
+    color: blue;
 }
+
+/*footer styling*/
 
 footer {
     color: var(--fontColor);
