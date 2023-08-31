@@ -32,7 +32,7 @@ header nav ul li {
 }
 /* picture area styling */
 
-.hero {
+.me {
     background-image: url("../images/keyboard-background.jpg");
     height: 600px;
     background-size: cover;
@@ -42,7 +42,7 @@ header nav ul li {
     justify-content: right;
 }
 
-.hero img {
+.me img {
     height: 500px;
     padding-right: 20px;
 }
@@ -128,7 +128,8 @@ h2 {
 
 .label {
     display:flexbox;
-    color: blue;
+    color: black;
+    font-size: 18px;
 }
 
 /*footer styling*/
@@ -150,4 +151,70 @@ footer ul {
 footer ul li a {
     padding: 2%;
     font-weight: bold;
+}
+
+/* mobile phone setup */
+
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    header nav ul {
+        min-height: 75px;
+    }
+
+    .me {
+        flex-direction: column;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .title {
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .examples {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .box {
+        width: 90%;
+        align-items: center;
+    }
+    
+    .grid {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        padding: 15px;
+        text-align: center;
+    }
+    
 }
