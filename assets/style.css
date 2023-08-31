@@ -2,7 +2,7 @@
     --background: #00021d;
     --fontColor:#e84fcb;
 }
-
+/* Header styling */
 header {
     background-color: var(--background);
     display:flex;
@@ -29,7 +29,7 @@ header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* picture area styling */
 .hero {
     background-image: url("../images/keyboard-background.jpg");
     height: 600px;
@@ -42,25 +42,30 @@ header nav ul li {
 
 .hero img {
     height: 500px;
+    padding-right: 20px;
 }
-
+/* about me styling  */
 .title {
+    display: flex;
     min-height: 100%;
     text-align: left;
     padding-right: 2%;
+    padding-left: 1%;
     min-width: 20%;
-    max-width: 20%;
+    font-style:italic;
+    flex-wrap:wrap;
 }
 
 h2 {
     font-size:42px;
+
 }
 
 .about-me {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 3%;
     background-color: var(--background);
     color: var(--fontColor);
@@ -70,4 +75,59 @@ h2 {
     font-size: 20px;
     line-height: 1.6;
     width: 90%;
+}
+
+.examples {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+    color: var(--fontColor);
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    font-style:normal;
+    justify-content:center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5%;
+}
+
+.sample {
+    background-image: url("../images/confused-older-man.jpg" );
+    background-size: cover;
+    border: solid;
+    color: black;
+    align-items: flex-end;
+}
+
+.label {
+    display:flexbox;
+}
+
+footer {
+    color: var(--fontColor);
+    background-color: var(--background);
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+footer ul li a {
+    padding: 2%;
+    font-weight: bold;
 }
