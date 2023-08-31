@@ -3,7 +3,7 @@
 ## Description
 A portfolio for potential employers and collaborators to view and get general information about me including my name, a photo of me, some past projects and my contact information.
 
-##Installation
+## Installation
 N/a
 
 ## Usage
